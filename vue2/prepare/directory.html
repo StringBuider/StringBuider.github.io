@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vue.js 源码目录设计 | 小张的共享文档</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="🤔你有什么想说？写进来吧！😎">
+    
+    <link rel="preload" href="./assets/css/0.styles.a246c231.css" as="style"><link rel="preload" href="./assets/js/app.c50cae2e.js" as="script"><link rel="preload" href="./assets/js/4.08095b6d.js" as="script"><link rel="preload" href="./assets/js/57.bd65c07b.js" as="script"><link rel="prefetch" href="./assets/js/10.ed3e9f33.js"><link rel="prefetch" href="./assets/js/11.6495f8ce.js"><link rel="prefetch" href="./assets/js/12.e15e40c1.js"><link rel="prefetch" href="./assets/js/13.33a2b3c3.js"><link rel="prefetch" href="./assets/js/14.5d605ae8.js"><link rel="prefetch" href="./assets/js/15.b5e3a30f.js"><link rel="prefetch" href="./assets/js/16.32bee43d.js"><link rel="prefetch" href="./assets/js/17.67f7f069.js"><link rel="prefetch" href="./assets/js/18.af04d610.js"><link rel="prefetch" href="./assets/js/19.730c3139.js"><link rel="prefetch" href="./assets/js/2.7fc48c46.js"><link rel="prefetch" href="./assets/js/20.1c4fbbf9.js"><link rel="prefetch" href="./assets/js/21.67119724.js"><link rel="prefetch" href="./assets/js/22.c2076f14.js"><link rel="prefetch" href="./assets/js/23.f25b155f.js"><link rel="prefetch" href="./assets/js/24.c8791672.js"><link rel="prefetch" href="./assets/js/25.af22f7f1.js"><link rel="prefetch" href="./assets/js/26.777a42b7.js"><link rel="prefetch" href="./assets/js/27.25c6658f.js"><link rel="prefetch" href="./assets/js/28.4c66a1fb.js"><link rel="prefetch" href="./assets/js/29.45d218cd.js"><link rel="prefetch" href="./assets/js/3.fb9770df.js"><link rel="prefetch" href="./assets/js/30.2cfa5f3d.js"><link rel="prefetch" href="./assets/js/31.9a7819c6.js"><link rel="prefetch" href="./assets/js/32.6b80cecb.js"><link rel="prefetch" href="./assets/js/33.e00e1922.js"><link rel="prefetch" href="./assets/js/34.445fb4ff.js"><link rel="prefetch" href="./assets/js/35.2f86d553.js"><link rel="prefetch" href="./assets/js/36.7e8dc342.js"><link rel="prefetch" href="./assets/js/37.827964ca.js"><link rel="prefetch" href="./assets/js/38.306618b3.js"><link rel="prefetch" href="./assets/js/39.96d345b4.js"><link rel="prefetch" href="./assets/js/40.5327dcb2.js"><link rel="prefetch" href="./assets/js/41.29160afa.js"><link rel="prefetch" href="./assets/js/42.3ec42885.js"><link rel="prefetch" href="./assets/js/43.db7bc261.js"><link rel="prefetch" href="./assets/js/44.60eae751.js"><link rel="prefetch" href="./assets/js/45.15437d11.js"><link rel="prefetch" href="./assets/js/46.55a5744d.js"><link rel="prefetch" href="./assets/js/47.e8e54de1.js"><link rel="prefetch" href="./assets/js/48.97e52f5e.js"><link rel="prefetch" href="./assets/js/49.c58d43a4.js"><link rel="prefetch" href="./assets/js/5.4c884eba.js"><link rel="prefetch" href="./assets/js/50.a93fcdb0.js"><link rel="prefetch" href="./assets/js/51.c43da0f8.js"><link rel="prefetch" href="./assets/js/52.e0cc02e1.js"><link rel="prefetch" href="./assets/js/53.95f0f53a.js"><link rel="prefetch" href="./assets/js/54.c4c47eaf.js"><link rel="prefetch" href="./assets/js/55.b37c9037.js"><link rel="prefetch" href="./assets/js/56.3d8ed2b4.js"><link rel="prefetch" href="./assets/js/58.134b9e82.js"><link rel="prefetch" href="./assets/js/59.24c871f7.js"><link rel="prefetch" href="./assets/js/6.4e374fac.js"><link rel="prefetch" href="./assets/js/60.b75523ad.js"><link rel="prefetch" href="./assets/js/61.484be178.js"><link rel="prefetch" href="./assets/js/62.180c4d5d.js"><link rel="prefetch" href="./assets/js/63.c4c8b737.js"><link rel="prefetch" href="./assets/js/64.3921bee2.js"><link rel="prefetch" href="./assets/js/65.8c31bc75.js"><link rel="prefetch" href="./assets/js/66.a5410547.js"><link rel="prefetch" href="./assets/js/67.32e09623.js"><link rel="prefetch" href="./assets/js/68.4d59d330.js"><link rel="prefetch" href="./assets/js/69.fffc95ef.js"><link rel="prefetch" href="./assets/js/7.ef54b1c1.js"><link rel="prefetch" href="./assets/js/70.72980d01.js"><link rel="prefetch" href="./assets/js/71.fbafa4c6.js"><link rel="prefetch" href="./assets/js/72.59e84ead.js"><link rel="prefetch" href="./assets/js/73.62c6073a.js"><link rel="prefetch" href="./assets/js/74.098849aa.js"><link rel="prefetch" href="./assets/js/75.c4126dcd.js"><link rel="prefetch" href="./assets/js/76.288ce637.js"><link rel="prefetch" href="./assets/js/77.405cc8e4.js"><link rel="prefetch" href="./assets/js/78.f092ec42.js"><link rel="prefetch" href="./assets/js/79.5965beb6.js"><link rel="prefetch" href="./assets/js/8.1e8a08c7.js"><link rel="prefetch" href="./assets/js/80.b06d3623.js"><link rel="prefetch" href="./assets/js/81.7e1c12fd.js"><link rel="prefetch" href="./assets/js/82.23093c7e.js"><link rel="prefetch" href="./assets/js/9.07409efc.js">
+    <link rel="stylesheet" href="./assets/css/0.styles.a246c231.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/./" class="home-link router-link-active"><!----> <span class="site-name">小张的共享文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/./" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="指南" class="dropdown-title"><span class="title">指南</span> <span class="arrow down"></span></button> <button type="button" aria-label="指南" class="mobile-dropdown-title"><span class="title">指南</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/./guide/getting-started.html" class="nav-link">
+  参与写作
+</a></li><li class="dropdown-item"><!----> <a href="/./guide/micro-frontends.html" class="nav-link">
+  微前端
+</a></li><li class="dropdown-item"><!----> <a href="/./guide/micro-frontends-faq.html" class="nav-link">
+  微前端FAQ
+</a></li><li class="dropdown-item"><!----> <a href="/./guide/git-flow.html" class="nav-link">
+  工作流
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="规范" class="dropdown-title"><span class="title">规范</span> <span class="arrow down"></span></button> <button type="button" aria-label="规范" class="mobile-dropdown-title"><span class="title">规范</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/./standard/micro-frontends-route.html" class="nav-link">
+  微前端-路由规范
+</a></li><li class="dropdown-item"><!----> <a href="/./standard/micro-frontends-version-control.html" class="nav-link">
+  微前端-版本管理
+</a></li><li class="dropdown-item"><!----> <a href="/./standard/typescript.html" class="nav-link">
+  TypeScript规范
+</a></li><li class="dropdown-item"><!----> <a href="/./standard/code-version-control.html" class="nav-link">
+  代码分支管理
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="tips" class="dropdown-title"><span class="title">tips</span> <span class="arrow down"></span></button> <button type="button" aria-label="tips" class="mobile-dropdown-title"><span class="title">tips</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/./tips/url-mode.html" class="nav-link">
+  url模式
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="插件" class="dropdown-title"><span class="title">插件</span> <span class="arrow down"></span></button> <button type="button" aria-label="插件" class="mobile-dropdown-title"><span class="title">插件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/./plugins/plugin.html" class="nav-link">
+  插件分享
+</a></li></ul></div></div><div class="nav-item"><a href="/./vue2/prepare/" class="nav-link router-link-active">
+  vue2.x
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="vue3.x" class="dropdown-title"><span class="title">vue3.x</span> <span class="arrow down"></span></button> <button type="button" aria-label="vue3.x" class="mobile-dropdown-title"><span class="title">vue3.x</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/./vue3/essence-of-comp.html" class="nav-link">
+  组件的本质
+</a></li><li class="dropdown-item"><!----> <a href="/./vue3/vnode.html" class="nav-link">
+  把VNode解剖一下
+</a></li><li class="dropdown-item"><!----> <a href="/./vue3/h.html" class="nav-link">
+  辅助创建 VNode 的 h 函数
+</a></li><li class="dropdown-item"><!----> <a href="/./vue3/observer.html" class="nav-link">
+  响应式原理
+</a></li><li class="dropdown-item"><!----> <a href="/./vue3/renderer.html" class="nav-link">
+  渲染器之挂载
+</a></li><li class="dropdown-item"><!----> <a href="/./vue3/renderer-patch.html" class="nav-link">
+  渲染器之patch
+</a></li><li class="dropdown-item"><!----> <a href="/./vue3/renderer-diff.html" class="nav-link">
+  渲染器的核心 Diff 算法
+</a></li><li class="dropdown-item"><!----> <a href="/./vue3/renderer-advanced.html" class="nav-link">
+  自定义渲染器
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端八股文" class="dropdown-title"><span class="title">前端八股文</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端八股文" class="mobile-dropdown-title"><span class="title">前端八股文</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/./basic/basic.html" class="nav-link">
+  八股文
+</a></li><li class="dropdown-item"><!----> <a href="/./basic/arithmetic.html" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/./basic/desinmode.html" class="nav-link">
+  设计模式
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试经验" class="dropdown-title"><span class="title">面试经验</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试经验" class="mobile-dropdown-title"><span class="title">面试经验</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/./interview/interview.html" class="nav-link">
+  面试经验
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/./" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="指南" class="dropdown-title"><span class="title">指南</span> <span class="arrow down"></span></button> <button type="button" aria-label="指南" class="mobile-dropdown-title"><span class="title">指南</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/./guide/getting-started.html" class="nav-link">
+  参与写作
+</a></li><li class="dropdown-item"><!----> <a href="/./guide/micro-frontends.html" class="nav-link">
+  微前端
+</a></li><li class="dropdown-item"><!----> <a href="/./guide/micro-frontends-faq.html" class="nav-link">
+  微前端FAQ
+</a></li><li class="dropdown-item"><!----> <a href="/./guide/git-flow.html" class="nav-link">
+  工作流
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="规范" class="dropdown-title"><span class="title">规范</span> <span class="arrow down"></span></button> <button type="button" aria-label="规范" class="mobile-dropdown-title"><span class="title">规范</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/./standard/micro-frontends-route.html" class="nav-link">
+  微前端-路由规范
+</a></li><li class="dropdown-item"><!----> <a href="/./standard/micro-frontends-version-control.html" class="nav-link">
+  微前端-版本管理
+</a></li><li class="dropdown-item"><!----> <a href="/./standard/typescript.html" class="nav-link">
+  TypeScript规范
+</a></li><li class="dropdown-item"><!----> <a href="/./standard/code-version-control.html" class="nav-link">
+  代码分支管理
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="tips" class="dropdown-title"><span class="title">tips</span> <span class="arrow down"></span></button> <button type="button" aria-label="tips" class="mobile-dropdown-title"><span class="title">tips</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/./tips/url-mode.html" class="nav-link">
+  url模式
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="插件" class="dropdown-title"><span class="title">插件</span> <span class="arrow down"></span></button> <button type="button" aria-label="插件" class="mobile-dropdown-title"><span class="title">插件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/./plugins/plugin.html" class="nav-link">
+  插件分享
+</a></li></ul></div></div><div class="nav-item"><a href="/./vue2/prepare/" class="nav-link router-link-active">
+  vue2.x
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="vue3.x" class="dropdown-title"><span class="title">vue3.x</span> <span class="arrow down"></span></button> <button type="button" aria-label="vue3.x" class="mobile-dropdown-title"><span class="title">vue3.x</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/./vue3/essence-of-comp.html" class="nav-link">
+  组件的本质
+</a></li><li class="dropdown-item"><!----> <a href="/./vue3/vnode.html" class="nav-link">
+  把VNode解剖一下
+</a></li><li class="dropdown-item"><!----> <a href="/./vue3/h.html" class="nav-link">
+  辅助创建 VNode 的 h 函数
+</a></li><li class="dropdown-item"><!----> <a href="/./vue3/observer.html" class="nav-link">
+  响应式原理
+</a></li><li class="dropdown-item"><!----> <a href="/./vue3/renderer.html" class="nav-link">
+  渲染器之挂载
+</a></li><li class="dropdown-item"><!----> <a href="/./vue3/renderer-patch.html" class="nav-link">
+  渲染器之patch
+</a></li><li class="dropdown-item"><!----> <a href="/./vue3/renderer-diff.html" class="nav-link">
+  渲染器的核心 Diff 算法
+</a></li><li class="dropdown-item"><!----> <a href="/./vue3/renderer-advanced.html" class="nav-link">
+  自定义渲染器
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端八股文" class="dropdown-title"><span class="title">前端八股文</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端八股文" class="mobile-dropdown-title"><span class="title">前端八股文</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/./basic/basic.html" class="nav-link">
+  八股文
+</a></li><li class="dropdown-item"><!----> <a href="/./basic/arithmetic.html" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/./basic/desinmode.html" class="nav-link">
+  设计模式
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试经验" class="dropdown-title"><span class="title">面试经验</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试经验" class="mobile-dropdown-title"><span class="title">面试经验</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/./interview/interview.html" class="nav-link">
+  面试经验
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>准备工作</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/./vue2/prepare/" aria-current="page" class="sidebar-link">Introduction</a></li><li><a href="/./vue2/prepare/flow.html" class="sidebar-link">认识 Flow</a></li><li><a href="/./vue2/prepare/directory.html" aria-current="page" class="active sidebar-link">Vue.js 源码目录设计</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/./vue2/prepare/directory.html#compiler" class="sidebar-link">compiler</a></li><li class="sidebar-sub-header"><a href="/./vue2/prepare/directory.html#core" class="sidebar-link">core</a></li><li class="sidebar-sub-header"><a href="/./vue2/prepare/directory.html#platform" class="sidebar-link">platform</a></li><li class="sidebar-sub-header"><a href="/./vue2/prepare/directory.html#server" class="sidebar-link">server</a></li><li class="sidebar-sub-header"><a href="/./vue2/prepare/directory.html#sfc" class="sidebar-link">sfc</a></li><li class="sidebar-sub-header"><a href="/./vue2/prepare/directory.html#shared" class="sidebar-link">shared</a></li><li class="sidebar-sub-header"><a href="/./vue2/prepare/directory.html#总结" class="sidebar-link">总结</a></li></ul></li><li><a href="/./vue2/prepare/build.html" class="sidebar-link">Vue.js 源码构建</a></li><li><a href="/./vue2/prepare/entrance.html" class="sidebar-link">从入口开始</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>数据驱动</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/./vue2/data-driven/" class="sidebar-link">Introduction</a></li><li><a href="/./vue2/data-driven/new-vue.html" class="sidebar-link">new Vue 发生了什么</a></li><li><a href="/./vue2/data-driven/mounted.html" class="sidebar-link">Vue 实例挂载的实现</a></li><li><a href="/./vue2/data-driven/render.html" class="sidebar-link">render</a></li><li><a href="/./vue2/data-driven/virtual-dom.html" class="sidebar-link">Virtual DOM</a></li><li><a href="/./vue2/data-driven/create-element.html" class="sidebar-link">createElement</a></li><li><a href="/./vue2/data-driven/update.html" class="sidebar-link">update</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>组件化</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/./vue2/components/" class="sidebar-link">Introduction</a></li><li><a href="/./vue2/components/create-component.html" class="sidebar-link">createComponent</a></li><li><a href="/./vue2/components/patch.html" class="sidebar-link">patch</a></li><li><a href="/./vue2/components/merge-option.html" class="sidebar-link">合并配置</a></li><li><a href="/./vue2/components/lifecycle.html" class="sidebar-link">生命周期</a></li><li><a href="/./vue2/components/component-register.html" class="sidebar-link">组件注册</a></li><li><a href="/./vue2/components/async-component.html" class="sidebar-link">异步组件</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>深入响应式原理</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/./vue2/reactive/" class="sidebar-link">Introduction</a></li><li><a href="/./vue2/reactive/reactive-object.html" class="sidebar-link">响应式对象</a></li><li><a href="/./vue2/reactive/getters.html" class="sidebar-link">依赖收集</a></li><li><a href="/./vue2/reactive/setters.html" class="sidebar-link">派发更新</a></li><li><a href="/./vue2/reactive/next-tick.html" class="sidebar-link">nextTick</a></li><li><a href="/./vue2/reactive/questions.html" class="sidebar-link">检测变化的注意事项</a></li><li><a href="/./vue2/reactive/computed-watcher.html" class="sidebar-link">计算属性 VS 侦听属性</a></li><li><a href="/./vue2/reactive/component-update.html" class="sidebar-link">组件更新</a></li><li><a href="/./vue2/reactive/props.html" class="sidebar-link">Props (v2.6.11)</a></li><li><a href="/./vue2/reactive/summary.html" class="sidebar-link">原理图</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>编译</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/./vue2/compile/" class="sidebar-link">Introduction</a></li><li><a href="/./vue2/compile/entrance.html" class="sidebar-link">编译入口</a></li><li><a href="/./vue2/compile/parse.html" class="sidebar-link">parse</a></li><li><a href="/./vue2/compile/optimize.html" class="sidebar-link">optimize</a></li><li><a href="/./vue2/compile/codegen.html" class="sidebar-link">codegen</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>扩展</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/./vue2/extend/" class="sidebar-link">Introduction</a></li><li><a href="/./vue2/extend/event.html" class="sidebar-link">event</a></li><li><a href="/./vue2/extend/v-model.html" class="sidebar-link">v-model</a></li><li><a href="/./vue2/extend/slot.html" class="sidebar-link">slot</a></li><li><a href="/./vue2/extend/keep-alive.html" class="sidebar-link">keep-alive</a></li><li><a href="/./vue2/extend/tansition.html" class="sidebar-link">transition</a></li><li><a href="/./vue2/extend/tansition-group.html" class="sidebar-link">transition-group</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Vue Router</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/./vue2/vue-router/" class="sidebar-link">Introduction</a></li><li><a href="/./vue2/vue-router/install.html" class="sidebar-link">路由注册</a></li><li><a href="/./vue2/vue-router/router.html" class="sidebar-link">VueRouter 对象</a></li><li><a href="/./vue2/vue-router/matcher.html" class="sidebar-link">matcher</a></li><li><a href="/./vue2/vue-router/transition-to.html" class="sidebar-link">路径切换</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Vuex</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/./vue2/vuex/" class="sidebar-link">Introduction</a></li><li><a href="/./vue2/vuex/init.html" class="sidebar-link">Vuex 初始化</a></li><li><a href="/./vue2/vuex/api.html" class="sidebar-link">API</a></li><li><a href="/./vue2/vuex/plugin.html" class="sidebar-link">插件</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vue-js-源码目录设计"><a href="#vue-js-源码目录设计" class="header-anchor">#</a> Vue.js 源码目录设计</h1> <p>Vue.js 的源码都在 src 目录下，其目录结构如下。</p> <div class="language- extra-class"><pre class="language-text"><code>src
+├── compiler        # 编译相关 
+├── core            # 核心代码 
+├── platforms       # 不同平台的支持
+├── server          # 服务端渲染
+├── sfc             # .vue 文件解析
+├── shared          # 共享代码
+</code></pre></div><h2 id="compiler"><a href="#compiler" class="header-anchor">#</a> compiler</h2> <p>compiler 目录包含 Vue.js 所有编译相关的代码。它包括把模板解析成 ast 语法树，ast 语法树优化，代码生成等功能。</p> <p>编译的工作可以在构建时做（借助 webpack、vue-loader 等辅助插件）；也可以在运行时做，使用包含构建功能的 Vue.js。显然，编译是一项耗性能的工作，所以更推荐前者——离线编译。</p> <h2 id="core"><a href="#core" class="header-anchor">#</a> core</h2> <p>core 目录包含了 Vue.js 的核心代码，包括内置组件、全局 API 封装，Vue 实例化、观察者、虚拟 DOM、工具函数等等。</p> <p>这里的代码可谓是 Vue.js 的灵魂，也是我们之后需要重点分析的地方。</p> <h2 id="platform"><a href="#platform" class="header-anchor">#</a> platform</h2> <p>Vue.js 是一个跨平台的 MVVM 框架，它可以跑在 web 上，也可以配合 weex 跑在 native 客户端上。platform 是 Vue.js 的入口，2 个目录代表 2 个主要入口，分别打包成运行在 web 上和 weex 上的 Vue.js。</p> <p>我们会重点分析 web 入口打包后的 Vue.js，对于 weex 入口打包的 Vue.js，感兴趣的同学可以自行研究。</p> <h2 id="server"><a href="#server" class="header-anchor">#</a> server</h2> <p>Vue.js 2.0 支持了服务端渲染，所有服务端渲染相关的逻辑都在这个目录下。注意：这部分代码是跑在服务端的 Node.js，不要和跑在浏览器端的 Vue.js 混为一谈。</p> <p>服务端渲染主要的工作是把组件渲染为服务器端的 HTML 字符串，将它们直接发送到浏览器，最后将静态标记&quot;混合&quot;为客户端上完全交互的应用程序。</p> <h2 id="sfc"><a href="#sfc" class="header-anchor">#</a> sfc</h2> <p>通常我们开发 Vue.js 都会借助 webpack 构建， 然后通过 .vue 单文件来编写组件。</p> <p>这个目录下的代码逻辑会把 .vue 文件内容解析成一个 JavaScript 的对象。</p> <h2 id="shared"><a href="#shared" class="header-anchor">#</a> shared</h2> <p>Vue.js 会定义一些工具方法，这里定义的工具方法都是会被浏览器端的 Vue.js 和服务端的 Vue.js 所共享的。</p> <h2 id="总结"><a href="#总结" class="header-anchor">#</a> 总结</h2> <p>从 Vue.js 的目录设计可以看到，作者把功能模块拆分的非常清楚，相关的逻辑放在一个独立的目录下维护，并且把复用的代码也抽成一个独立目录。</p> <p>这样的目录设计让代码的阅读性和可维护性都变强，是非常值得学习和推敲的。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/./vue2/prepare/flow.html" class="prev">
+        认识 Flow
+      </a></span> <span class="next"><a href="/./vue2/prepare/build.html">
+        Vue.js 源码构建
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="./assets/js/app.c50cae2e.js" defer></script><script src="./assets/js/4.08095b6d.js" defer></script><script src="./assets/js/57.bd65c07b.js" defer></script>
+  </body>
+</html>

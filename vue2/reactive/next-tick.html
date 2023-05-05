@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>nextTick | 小张的共享文档</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="🤔你有什么想说？写进来吧！😎">
+    
+    <link rel="preload" href="./assets/css/0.styles.a246c231.css" as="style"><link rel="preload" href="./assets/js/app.c50cae2e.js" as="script"><link rel="preload" href="./assets/js/4.08095b6d.js" as="script"><link rel="preload" href="./assets/js/65.8c31bc75.js" as="script"><link rel="prefetch" href="./assets/js/10.ed3e9f33.js"><link rel="prefetch" href="./assets/js/11.6495f8ce.js"><link rel="prefetch" href="./assets/js/12.e15e40c1.js"><link rel="prefetch" href="./assets/js/13.33a2b3c3.js"><link rel="prefetch" href="./assets/js/14.5d605ae8.js"><link rel="prefetch" href="./assets/js/15.b5e3a30f.js"><link rel="prefetch" href="./assets/js/16.32bee43d.js"><link rel="prefetch" href="./assets/js/17.67f7f069.js"><link rel="prefetch" href="./assets/js/18.af04d610.js"><link rel="prefetch" href="./assets/js/19.730c3139.js"><link rel="prefetch" href="./assets/js/2.7fc48c46.js"><link rel="prefetch" href="./assets/js/20.1c4fbbf9.js"><link rel="prefetch" href="./assets/js/21.67119724.js"><link rel="prefetch" href="./assets/js/22.c2076f14.js"><link rel="prefetch" href="./assets/js/23.f25b155f.js"><link rel="prefetch" href="./assets/js/24.c8791672.js"><link rel="prefetch" href="./assets/js/25.af22f7f1.js"><link rel="prefetch" href="./assets/js/26.777a42b7.js"><link rel="prefetch" href="./assets/js/27.25c6658f.js"><link rel="prefetch" href="./assets/js/28.4c66a1fb.js"><link rel="prefetch" href="./assets/js/29.45d218cd.js"><link rel="prefetch" href="./assets/js/3.fb9770df.js"><link rel="prefetch" href="./assets/js/30.2cfa5f3d.js"><link rel="prefetch" href="./assets/js/31.9a7819c6.js"><link rel="prefetch" href="./assets/js/32.6b80cecb.js"><link rel="prefetch" href="./assets/js/33.e00e1922.js"><link rel="prefetch" href="./assets/js/34.445fb4ff.js"><link rel="prefetch" href="./assets/js/35.2f86d553.js"><link rel="prefetch" href="./assets/js/36.7e8dc342.js"><link rel="prefetch" href="./assets/js/37.827964ca.js"><link rel="prefetch" href="./assets/js/38.306618b3.js"><link rel="prefetch" href="./assets/js/39.96d345b4.js"><link rel="prefetch" href="./assets/js/40.5327dcb2.js"><link rel="prefetch" href="./assets/js/41.29160afa.js"><link rel="prefetch" href="./assets/js/42.3ec42885.js"><link rel="prefetch" href="./assets/js/43.db7bc261.js"><link rel="prefetch" href="./assets/js/44.60eae751.js"><link rel="prefetch" href="./assets/js/45.15437d11.js"><link rel="prefetch" href="./assets/js/46.55a5744d.js"><link rel="prefetch" href="./assets/js/47.e8e54de1.js"><link rel="prefetch" href="./assets/js/48.97e52f5e.js"><link rel="prefetch" href="./assets/js/49.c58d43a4.js"><link rel="prefetch" href="./assets/js/5.4c884eba.js"><link rel="prefetch" href="./assets/js/50.a93fcdb0.js"><link rel="prefetch" href="./assets/js/51.c43da0f8.js"><link rel="prefetch" href="./assets/js/52.e0cc02e1.js"><link rel="prefetch" href="./assets/js/53.95f0f53a.js"><link rel="prefetch" href="./assets/js/54.c4c47eaf.js"><link rel="prefetch" href="./assets/js/55.b37c9037.js"><link rel="prefetch" href="./assets/js/56.3d8ed2b4.js"><link rel="prefetch" href="./assets/js/57.bd65c07b.js"><link rel="prefetch" href="./assets/js/58.134b9e82.js"><link rel="prefetch" href="./assets/js/59.24c871f7.js"><link rel="prefetch" href="./assets/js/6.4e374fac.js"><link rel="prefetch" href="./assets/js/60.b75523ad.js"><link rel="prefetch" href="./assets/js/61.484be178.js"><link rel="prefetch" href="./assets/js/62.180c4d5d.js"><link rel="prefetch" href="./assets/js/63.c4c8b737.js"><link rel="prefetch" href="./assets/js/64.3921bee2.js"><link rel="prefetch" href="./assets/js/66.a5410547.js"><link rel="prefetch" href="./assets/js/67.32e09623.js"><link rel="prefetch" href="./assets/js/68.4d59d330.js"><link rel="prefetch" href="./assets/js/69.fffc95ef.js"><link rel="prefetch" href="./assets/js/7.ef54b1c1.js"><link rel="prefetch" href="./assets/js/70.72980d01.js"><link rel="prefetch" href="./assets/js/71.fbafa4c6.js"><link rel="prefetch" href="./assets/js/72.59e84ead.js"><link rel="prefetch" href="./assets/js/73.62c6073a.js"><link rel="prefetch" href="./assets/js/74.098849aa.js"><link rel="prefetch" href="./assets/js/75.c4126dcd.js"><link rel="prefetch" href="./assets/js/76.288ce637.js"><link rel="prefetch" href="./assets/js/77.405cc8e4.js"><link rel="prefetch" href="./assets/js/78.f092ec42.js"><link rel="prefetch" href="./assets/js/79.5965beb6.js"><link rel="prefetch" href="./assets/js/8.1e8a08c7.js"><link rel="prefetch" href="./assets/js/80.b06d3623.js"><link rel="prefetch" href="./assets/js/81.7e1c12fd.js"><link rel="prefetch" href="./assets/js/82.23093c7e.js"><link rel="prefetch" href="./assets/js/9.07409efc.js">
+    <link rel="stylesheet" href="./assets/css/0.styles.a246c231.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/./" class="home-link router-link-active"><!----> <span class="site-name">小张的共享文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/./" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="指南" class="dropdown-title"><span class="title">指南</span> <span class="arrow down"></span></button> <button type="button" aria-label="指南" class="mobile-dropdown-title"><span class="title">指南</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/./guide/getting-started.html" class="nav-link">
+  参与写作
+</a></li><li class="dropdown-item"><!----> <a href="/./guide/micro-frontends.html" class="nav-link">
+  微前端
+</a></li><li class="dropdown-item"><!----> <a href="/./guide/micro-frontends-faq.html" class="nav-link">
+  微前端FAQ
+</a></li><li class="dropdown-item"><!----> <a href="/./guide/git-flow.html" class="nav-link">
+  工作流
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="规范" class="dropdown-title"><span class="title">规范</span> <span class="arrow down"></span></button> <button type="button" aria-label="规范" class="mobile-dropdown-title"><span class="title">规范</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/./standard/micro-frontends-route.html" class="nav-link">
+  微前端-路由规范
+</a></li><li class="dropdown-item"><!----> <a href="/./standard/micro-frontends-version-control.html" class="nav-link">
+  微前端-版本管理
+</a></li><li class="dropdown-item"><!----> <a href="/./standard/typescript.html" class="nav-link">
+  TypeScript规范
+</a></li><li class="dropdown-item"><!----> <a href="/./standard/code-version-control.html" class="nav-link">
+  代码分支管理
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="tips" class="dropdown-title"><span class="title">tips</span> <span class="arrow down"></span></button> <button type="button" aria-label="tips" class="mobile-dropdown-title"><span class="title">tips</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/./tips/url-mode.html" class="nav-link">
+  url模式
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="插件" class="dropdown-title"><span class="title">插件</span> <span class="arrow down"></span></button> <button type="button" aria-label="插件" class="mobile-dropdown-title"><span class="title">插件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/./plugins/plugin.html" class="nav-link">
+  插件分享
+</a></li></ul></div></div><div class="nav-item"><a href="/./vue2/prepare/" class="nav-link">
+  vue2.x
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="vue3.x" class="dropdown-title"><span class="title">vue3.x</span> <span class="arrow down"></span></button> <button type="button" aria-label="vue3.x" class="mobile-dropdown-title"><span class="title">vue3.x</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/./vue3/essence-of-comp.html" class="nav-link">
+  组件的本质
+</a></li><li class="dropdown-item"><!----> <a href="/./vue3/vnode.html" class="nav-link">
+  把VNode解剖一下
+</a></li><li class="dropdown-item"><!----> <a href="/./vue3/h.html" class="nav-link">
+  辅助创建 VNode 的 h 函数
+</a></li><li class="dropdown-item"><!----> <a href="/./vue3/observer.html" class="nav-link">
+  响应式原理
+</a></li><li class="dropdown-item"><!----> <a href="/./vue3/renderer.html" class="nav-link">
+  渲染器之挂载
+</a></li><li class="dropdown-item"><!----> <a href="/./vue3/renderer-patch.html" class="nav-link">
+  渲染器之patch
+</a></li><li class="dropdown-item"><!----> <a href="/./vue3/renderer-diff.html" class="nav-link">
+  渲染器的核心 Diff 算法
+</a></li><li class="dropdown-item"><!----> <a href="/./vue3/renderer-advanced.html" class="nav-link">
+  自定义渲染器
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端八股文" class="dropdown-title"><span class="title">前端八股文</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端八股文" class="mobile-dropdown-title"><span class="title">前端八股文</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/./basic/basic.html" class="nav-link">
+  八股文
+</a></li><li class="dropdown-item"><!----> <a href="/./basic/arithmetic.html" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/./basic/desinmode.html" class="nav-link">
+  设计模式
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试经验" class="dropdown-title"><span class="title">面试经验</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试经验" class="mobile-dropdown-title"><span class="title">面试经验</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/./interview/interview.html" class="nav-link">
+  面试经验
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/./" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="指南" class="dropdown-title"><span class="title">指南</span> <span class="arrow down"></span></button> <button type="button" aria-label="指南" class="mobile-dropdown-title"><span class="title">指南</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/./guide/getting-started.html" class="nav-link">
+  参与写作
+</a></li><li class="dropdown-item"><!----> <a href="/./guide/micro-frontends.html" class="nav-link">
+  微前端
+</a></li><li class="dropdown-item"><!----> <a href="/./guide/micro-frontends-faq.html" class="nav-link">
+  微前端FAQ
+</a></li><li class="dropdown-item"><!----> <a href="/./guide/git-flow.html" class="nav-link">
+  工作流
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="规范" class="dropdown-title"><span class="title">规范</span> <span class="arrow down"></span></button> <button type="button" aria-label="规范" class="mobile-dropdown-title"><span class="title">规范</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/./standard/micro-frontends-route.html" class="nav-link">
+  微前端-路由规范
+</a></li><li class="dropdown-item"><!----> <a href="/./standard/micro-frontends-version-control.html" class="nav-link">
+  微前端-版本管理
+</a></li><li class="dropdown-item"><!----> <a href="/./standard/typescript.html" class="nav-link">
+  TypeScript规范
+</a></li><li class="dropdown-item"><!----> <a href="/./standard/code-version-control.html" class="nav-link">
+  代码分支管理
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="tips" class="dropdown-title"><span class="title">tips</span> <span class="arrow down"></span></button> <button type="button" aria-label="tips" class="mobile-dropdown-title"><span class="title">tips</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/./tips/url-mode.html" class="nav-link">
+  url模式
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="插件" class="dropdown-title"><span class="title">插件</span> <span class="arrow down"></span></button> <button type="button" aria-label="插件" class="mobile-dropdown-title"><span class="title">插件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/./plugins/plugin.html" class="nav-link">
+  插件分享
+</a></li></ul></div></div><div class="nav-item"><a href="/./vue2/prepare/" class="nav-link">
+  vue2.x
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="vue3.x" class="dropdown-title"><span class="title">vue3.x</span> <span class="arrow down"></span></button> <button type="button" aria-label="vue3.x" class="mobile-dropdown-title"><span class="title">vue3.x</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/./vue3/essence-of-comp.html" class="nav-link">
+  组件的本质
+</a></li><li class="dropdown-item"><!----> <a href="/./vue3/vnode.html" class="nav-link">
+  把VNode解剖一下
+</a></li><li class="dropdown-item"><!----> <a href="/./vue3/h.html" class="nav-link">
+  辅助创建 VNode 的 h 函数
+</a></li><li class="dropdown-item"><!----> <a href="/./vue3/observer.html" class="nav-link">
+  响应式原理
+</a></li><li class="dropdown-item"><!----> <a href="/./vue3/renderer.html" class="nav-link">
+  渲染器之挂载
+</a></li><li class="dropdown-item"><!----> <a href="/./vue3/renderer-patch.html" class="nav-link">
+  渲染器之patch
+</a></li><li class="dropdown-item"><!----> <a href="/./vue3/renderer-diff.html" class="nav-link">
+  渲染器的核心 Diff 算法
+</a></li><li class="dropdown-item"><!----> <a href="/./vue3/renderer-advanced.html" class="nav-link">
+  自定义渲染器
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端八股文" class="dropdown-title"><span class="title">前端八股文</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端八股文" class="mobile-dropdown-title"><span class="title">前端八股文</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/./basic/basic.html" class="nav-link">
+  八股文
+</a></li><li class="dropdown-item"><!----> <a href="/./basic/arithmetic.html" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/./basic/desinmode.html" class="nav-link">
+  设计模式
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试经验" class="dropdown-title"><span class="title">面试经验</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试经验" class="mobile-dropdown-title"><span class="title">面试经验</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/./interview/interview.html" class="nav-link">
+  面试经验
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>准备工作</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/./vue2/prepare/" class="sidebar-link">Introduction</a></li><li><a href="/./vue2/prepare/flow.html" class="sidebar-link">认识 Flow</a></li><li><a href="/./vue2/prepare/directory.html" class="sidebar-link">Vue.js 源码目录设计</a></li><li><a href="/./vue2/prepare/build.html" class="sidebar-link">Vue.js 源码构建</a></li><li><a href="/./vue2/prepare/entrance.html" class="sidebar-link">从入口开始</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>数据驱动</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/./vue2/data-driven/" class="sidebar-link">Introduction</a></li><li><a href="/./vue2/data-driven/new-vue.html" class="sidebar-link">new Vue 发生了什么</a></li><li><a href="/./vue2/data-driven/mounted.html" class="sidebar-link">Vue 实例挂载的实现</a></li><li><a href="/./vue2/data-driven/render.html" class="sidebar-link">render</a></li><li><a href="/./vue2/data-driven/virtual-dom.html" class="sidebar-link">Virtual DOM</a></li><li><a href="/./vue2/data-driven/create-element.html" class="sidebar-link">createElement</a></li><li><a href="/./vue2/data-driven/update.html" class="sidebar-link">update</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>组件化</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/./vue2/components/" class="sidebar-link">Introduction</a></li><li><a href="/./vue2/components/create-component.html" class="sidebar-link">createComponent</a></li><li><a href="/./vue2/components/patch.html" class="sidebar-link">patch</a></li><li><a href="/./vue2/components/merge-option.html" class="sidebar-link">合并配置</a></li><li><a href="/./vue2/components/lifecycle.html" class="sidebar-link">生命周期</a></li><li><a href="/./vue2/components/component-register.html" class="sidebar-link">组件注册</a></li><li><a href="/./vue2/components/async-component.html" class="sidebar-link">异步组件</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>深入响应式原理</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/./vue2/reactive/" aria-current="page" class="sidebar-link">Introduction</a></li><li><a href="/./vue2/reactive/reactive-object.html" class="sidebar-link">响应式对象</a></li><li><a href="/./vue2/reactive/getters.html" class="sidebar-link">依赖收集</a></li><li><a href="/./vue2/reactive/setters.html" class="sidebar-link">派发更新</a></li><li><a href="/./vue2/reactive/next-tick.html" aria-current="page" class="active sidebar-link">nextTick</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/./vue2/reactive/next-tick.html#js-运行机制" class="sidebar-link">JS 运行机制</a></li><li class="sidebar-sub-header"><a href="/./vue2/reactive/next-tick.html#vue-的实现" class="sidebar-link">Vue 的实现</a></li><li class="sidebar-sub-header"><a href="/./vue2/reactive/next-tick.html#总结" class="sidebar-link">总结</a></li></ul></li><li><a href="/./vue2/reactive/questions.html" class="sidebar-link">检测变化的注意事项</a></li><li><a href="/./vue2/reactive/computed-watcher.html" class="sidebar-link">计算属性 VS 侦听属性</a></li><li><a href="/./vue2/reactive/component-update.html" class="sidebar-link">组件更新</a></li><li><a href="/./vue2/reactive/props.html" class="sidebar-link">Props (v2.6.11)</a></li><li><a href="/./vue2/reactive/summary.html" class="sidebar-link">原理图</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>编译</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/./vue2/compile/" class="sidebar-link">Introduction</a></li><li><a href="/./vue2/compile/entrance.html" class="sidebar-link">编译入口</a></li><li><a href="/./vue2/compile/parse.html" class="sidebar-link">parse</a></li><li><a href="/./vue2/compile/optimize.html" class="sidebar-link">optimize</a></li><li><a href="/./vue2/compile/codegen.html" class="sidebar-link">codegen</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>扩展</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/./vue2/extend/" class="sidebar-link">Introduction</a></li><li><a href="/./vue2/extend/event.html" class="sidebar-link">event</a></li><li><a href="/./vue2/extend/v-model.html" class="sidebar-link">v-model</a></li><li><a href="/./vue2/extend/slot.html" class="sidebar-link">slot</a></li><li><a href="/./vue2/extend/keep-alive.html" class="sidebar-link">keep-alive</a></li><li><a href="/./vue2/extend/tansition.html" class="sidebar-link">transition</a></li><li><a href="/./vue2/extend/tansition-group.html" class="sidebar-link">transition-group</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Vue Router</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/./vue2/vue-router/" class="sidebar-link">Introduction</a></li><li><a href="/./vue2/vue-router/install.html" class="sidebar-link">路由注册</a></li><li><a href="/./vue2/vue-router/router.html" class="sidebar-link">VueRouter 对象</a></li><li><a href="/./vue2/vue-router/matcher.html" class="sidebar-link">matcher</a></li><li><a href="/./vue2/vue-router/transition-to.html" class="sidebar-link">路径切换</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Vuex</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/./vue2/vuex/" class="sidebar-link">Introduction</a></li><li><a href="/./vue2/vuex/init.html" class="sidebar-link">Vuex 初始化</a></li><li><a href="/./vue2/vuex/api.html" class="sidebar-link">API</a></li><li><a href="/./vue2/vuex/plugin.html" class="sidebar-link">插件</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="nexttick"><a href="#nexttick" class="header-anchor">#</a> nextTick</h1> <p><code>nextTick</code> 是 Vue 的一个核心实现，在介绍 Vue 的 nextTick 之前，为了方便大家理解，我先简单介绍一下 JS 的运行机制。</p> <h2 id="js-运行机制"><a href="#js-运行机制" class="header-anchor">#</a> JS 运行机制</h2> <p>JS 执行是单线程的，它是基于事件循环的。事件循环大致分为以下几个步骤：</p> <p>（1）所有同步任务都在主线程上执行，形成一个执行栈（execution context stack）。</p> <p>（2）主线程之外，还存在一个&quot;任务队列&quot;（task queue）。只要异步任务有了运行结果，就在&quot;任务队列&quot;之中放置一个事件。</p> <p>（3）一旦&quot;执行栈&quot;中的所有同步任务执行完毕，系统就会读取&quot;任务队列&quot;，看看里面有哪些事件。那些对应的异步任务，于是结束等待状态，进入执行栈，开始执行。</p> <p>（4）主线程不断重复上面的第三步。</p> <img src="./assets/event-loop.png"> <p>主线程的执行过程就是一个 tick，而所有的异步结果都是通过 “任务队列” 来调度。 消息队列中存放的是一个个的任务（task）。 规范中规定 task 分为两大类，分别是 macro task 和 micro task，并且每个 macro task 结束后，都要清空所有的 micro task。</p> <p>关于 macro task 和 micro task 的概念，这里不会细讲，简单通过一段代码演示他们的执行顺序：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">for</span> <span class="token punctuation">(</span>macroTask <span class="token keyword">of</span> macroTaskQueue<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 1. Handle current MACRO-TASK</span>
+    <span class="token function">handleMacroTask</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      
+    <span class="token comment">// 2. Handle all MICRO-TASK</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span>microTask <span class="token keyword">of</span> microTaskQueue<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">handleMicroTask</span><span class="token punctuation">(</span>microTask<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>在浏览器环境中，常见的 macro task 有 setTimeout、MessageChannel、postMessage、setImmediate；常见的 micro task 有 MutationObsever 和 Promise.then。</p> <h2 id="vue-的实现"><a href="#vue-的实现" class="header-anchor">#</a> Vue 的实现</h2> <p>在 Vue 源码 2.5+ 后，<code>nextTick</code> 的实现单独有一个 JS 文件来维护它，它的源码并不多，总共也就 100 多行。接下来我们来看一下它的实现，在 <code>src/core/util/next-tick.js</code> 中：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> noop <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'shared/util'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> handleError <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./error'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> isIOS<span class="token punctuation">,</span> isNative <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./env'</span>
+
+<span class="token keyword">const</span> callbacks <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+<span class="token keyword">let</span> pending <span class="token operator">=</span> <span class="token boolean">false</span>
+
+<span class="token keyword">function</span> <span class="token function">flushCallbacks</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  pending <span class="token operator">=</span> <span class="token boolean">false</span>
+  <span class="token keyword">const</span> copies <span class="token operator">=</span> callbacks<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+  callbacks<span class="token punctuation">.</span>length <span class="token operator">=</span> <span class="token number">0</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> copies<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    copies<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// Here we have async deferring wrappers using both microtasks and (macro) tasks.</span>
+<span class="token comment">// In &lt; 2.4 we used microtasks everywhere, but there are some scenarios where</span>
+<span class="token comment">// microtasks have too high a priority and fire in between supposedly</span>
+<span class="token comment">// sequential events (e.g. #4521, #6690) or even between bubbling of the same</span>
+<span class="token comment">// event (#6566). However, using (macro) tasks everywhere also has subtle problems</span>
+<span class="token comment">// when state is changed right before repaint (e.g. #6813, out-in transitions).</span>
+<span class="token comment">// Here we use microtask by default, but expose a way to force (macro) task when</span>
+<span class="token comment">// needed (e.g. in event handlers attached by v-on).</span>
+<span class="token keyword">let</span> microTimerFunc
+<span class="token keyword">let</span> macroTimerFunc
+<span class="token keyword">let</span> useMacroTask <span class="token operator">=</span> <span class="token boolean">false</span>
+
+<span class="token comment">// Determine (macro) task defer implementation.</span>
+<span class="token comment">// Technically setImmediate should be the ideal choice, but it's only available</span>
+<span class="token comment">// in IE. The only polyfill that consistently queues the callback after all DOM</span>
+<span class="token comment">// events triggered in the same loop is by using MessageChannel.</span>
+<span class="token comment">/* istanbul ignore if */</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> setImmediate <span class="token operator">!==</span> <span class="token string">'undefined'</span> <span class="token operator">&amp;&amp;</span> <span class="token function">isNative</span><span class="token punctuation">(</span>setImmediate<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function-variable function">macroTimerFunc</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token function">setImmediate</span><span class="token punctuation">(</span>flushCallbacks<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> MessageChannel <span class="token operator">!==</span> <span class="token string">'undefined'</span> <span class="token operator">&amp;&amp;</span> <span class="token punctuation">(</span>
+  <span class="token function">isNative</span><span class="token punctuation">(</span>MessageChannel<span class="token punctuation">)</span> <span class="token operator">||</span>
+  <span class="token comment">// PhantomJS</span>
+  MessageChannel<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token string">'[object MessageChannelConstructor]'</span>
+<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> channel <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">MessageChannel</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token keyword">const</span> port <span class="token operator">=</span> channel<span class="token punctuation">.</span>port2
+  channel<span class="token punctuation">.</span>port1<span class="token punctuation">.</span>onmessage <span class="token operator">=</span> flushCallbacks
+  <span class="token function-variable function">macroTimerFunc</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    port<span class="token punctuation">.</span><span class="token function">postMessage</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+  <span class="token comment">/* istanbul ignore next */</span>
+  <span class="token function-variable function">macroTimerFunc</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span>flushCallbacks<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// Determine microtask defer implementation.</span>
+<span class="token comment">/* istanbul ignore next, $flow-disable-line */</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> Promise <span class="token operator">!==</span> <span class="token string">'undefined'</span> <span class="token operator">&amp;&amp;</span> <span class="token function">isNative</span><span class="token punctuation">(</span>Promise<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> p <span class="token operator">=</span> Promise<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token function-variable function">microTimerFunc</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    p<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span>flushCallbacks<span class="token punctuation">)</span>
+    <span class="token comment">// in problematic UIWebViews, Promise.then doesn't completely break, but</span>
+    <span class="token comment">// it can get stuck in a weird state where callbacks are pushed into the</span>
+    <span class="token comment">// microtask queue but the queue isn't being flushed, until the browser</span>
+    <span class="token comment">// needs to do some other work, e.g. handle a timer. Therefore we can</span>
+    <span class="token comment">// &quot;force&quot; the microtask queue to be flushed by adding an empty timer.</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>isIOS<span class="token punctuation">)</span> <span class="token function">setTimeout</span><span class="token punctuation">(</span>noop<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+  <span class="token comment">// fallback to macro</span>
+  microTimerFunc <span class="token operator">=</span> macroTimerFunc
+<span class="token punctuation">}</span>
+
+<span class="token comment">/**
+ * Wrap a function so that if any code inside triggers state change,
+ * the changes are queued using a (macro) task instead of a microtask.
+ */</span>
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">withMacroTask</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token literal-property property">fn</span><span class="token operator">:</span> Function</span><span class="token punctuation">)</span><span class="token operator">:</span> Function <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> fn<span class="token punctuation">.</span>_withTask <span class="token operator">||</span> <span class="token punctuation">(</span>fn<span class="token punctuation">.</span><span class="token function-variable function">_withTask</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    useMacroTask <span class="token operator">=</span> <span class="token boolean">true</span>
+    <span class="token keyword">const</span> res <span class="token operator">=</span> <span class="token function">fn</span><span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">,</span> arguments<span class="token punctuation">)</span>
+    useMacroTask <span class="token operator">=</span> <span class="token boolean">false</span>
+    <span class="token keyword">return</span> res
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">nextTick</span> <span class="token punctuation">(</span><span class="token parameter">cb<span class="token operator">?</span><span class="token operator">:</span> Function<span class="token punctuation">,</span> ctx<span class="token operator">?</span><span class="token operator">:</span> Object</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> _resolve
+  callbacks<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>cb<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">try</span> <span class="token punctuation">{</span>
+        <span class="token function">cb</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>ctx<span class="token punctuation">)</span>
+      <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">handleError</span><span class="token punctuation">(</span>e<span class="token punctuation">,</span> ctx<span class="token punctuation">,</span> <span class="token string">'nextTick'</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>_resolve<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token function">_resolve</span><span class="token punctuation">(</span>ctx<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>pending<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    pending <span class="token operator">=</span> <span class="token boolean">true</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>useMacroTask<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token function">macroTimerFunc</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      <span class="token function">microTimerFunc</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">// $flow-disable-line</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>cb <span class="token operator">&amp;&amp;</span> <span class="token keyword">typeof</span> Promise <span class="token operator">!==</span> <span class="token string">'undefined'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token parameter">resolve</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      _resolve <span class="token operator">=</span> resolve
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><code>next-tick.js</code> 申明了 <code>microTimerFunc</code> 和 <code>macroTimerFunc</code> 2 个变量，它们分别对应的是 micro task 的函数和 macro task 的函数。对于 macro task 的实现，优先检测是否支持原生 <code>setImmediate</code>，这是一个高版本 IE 和 Edge 才支持的特性，不支持的话再去检测是否支持原生的 <code>MessageChannel</code>，如果也不支持的话就会降级为 <code>setTimeout 0</code>；而对于 micro task 的实现，则检测浏览器是否原生支持 Promise，不支持的话直接指向 macro task 的实现。</p> <p><code>next-tick.js</code> 对外暴露了 2 个函数，先来看 <code>nextTick</code>，这就是我们在上一节执行 <code>nextTick(flushSchedulerQueue)</code> 所用到的函数。它的逻辑也很简单，把传入的回调函数 <code>cb</code> 压入 <code>callbacks</code> 数组，最后一次性地根据 <code>useMacroTask</code> 条件执行 <code>macroTimerFunc</code> 或者是 <code>microTimerFunc</code>，而它们都会在下一个 tick 执行 <code>flushCallbacks</code>，<code>flushCallbacks</code> 的逻辑非常简单，对 <code>callbacks</code> 遍历，然后执行相应的回调函数。</p> <p>这里使用 <code>callbacks</code> 而不是直接在 <code>nextTick</code> 中执行回调函数的原因是保证在同一个 tick 内多次执行 <code>nextTick</code>，不会开启多个异步任务，而把这些异步任务都压成一个同步任务，在下一个 tick 执行完毕。</p> <p><code>nextTick</code> 函数最后还有一段逻辑：</p> <div class="language-js extra-class"><pre class="language-js"><code> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>cb <span class="token operator">&amp;&amp;</span> <span class="token keyword">typeof</span> Promise <span class="token operator">!==</span> <span class="token string">'undefined'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token parameter">resolve</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    _resolve <span class="token operator">=</span> resolve
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>这是当 <code>nextTick</code> 不传 <code>cb</code> 参数的时候，提供一个 Promise 化的调用，比如：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">nextTick</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>当 <code>_resolve</code> 函数执行，就会跳到 <code>then</code> 的逻辑中。</p> <p><code>next-tick.js</code> 还对外暴露了 <code>withMacroTask</code> 函数，它是对函数做一层包装，确保函数执行过程中对数据任意的修改，触发变化执行 <code>nextTick</code> 的时候强制走 <code>macroTimerFunc</code>。比如对于一些 DOM 交互事件，如 <code>v-on</code> 绑定的事件回调函数的处理，会强制走 macro task。</p> <h2 id="总结"><a href="#总结" class="header-anchor">#</a> 总结</h2> <p>通过这一节对 <code>nextTick</code> 的分析，并结合上一节的 setter 分析，我们了解到数据的变化到 DOM 的重新渲染是一个异步过程，发生在下一个 tick。这就是我们平时在开发的过程中，比如从服务端接口去获取数据的时候，数据做了修改，如果我们的某些方法去依赖了数据修改后的 DOM 变化，我们就必须在 <code>nextTick</code> 后执行。比如下面的伪代码：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">getData</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>xxx <span class="token operator">=</span> res<span class="token punctuation">.</span>data
+  <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$nextTick</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 这里我们可以获取变化后的 DOM</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>Vue.js 提供了 2 种调用 <code>nextTick</code> 的方式，一种是全局 API <code>Vue.nextTick</code>，一种是实例上的方法 <code>vm.$nextTick</code>，无论我们使用哪一种，最后都是调用 <code>next-tick.js</code> 中实现的 <code>nextTick</code> 方法。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/./vue2/reactive/setters.html" class="prev">
+        派发更新
+      </a></span> <span class="next"><a href="/./vue2/reactive/questions.html">
+        检测变化的注意事项
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="./assets/js/app.c50cae2e.js" defer></script><script src="./assets/js/4.08095b6d.js" defer></script><script src="./assets/js/65.8c31bc75.js" defer></script>
+  </body>
+</html>
